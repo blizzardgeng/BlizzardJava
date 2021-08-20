@@ -1,4 +1,4 @@
-package 第一阶段.模块二面向对象.static关键字和继承.static静态方法;
+package static关键字和继承.static静态方法;
 
 /**
  * @author : Kevin Geng

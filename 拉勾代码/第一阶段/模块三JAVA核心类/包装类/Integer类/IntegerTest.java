@@ -1,4 +1,4 @@
-package 第一阶段.模块三JAVA核心类.包装类.Integer类;
+package 包装类.Integer类;
 
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 

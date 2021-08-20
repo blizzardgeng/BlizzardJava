@@ -1,4 +1,4 @@
-package 第一阶段.模块三JAVA核心类.包装类.Boolean类;
+package 包装类.Boolean类;
 
 import com.sun.org.apache.xml.internal.serializer.utils.BoolStack;
 

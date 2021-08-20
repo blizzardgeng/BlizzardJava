@@ -1,4 +1,4 @@
-package 第一阶段.模块三JAVA核心类.包装类.Character类;
+package 包装类.Character类;
 
 public class CharacterTest {
     public static void main(String[] args) {

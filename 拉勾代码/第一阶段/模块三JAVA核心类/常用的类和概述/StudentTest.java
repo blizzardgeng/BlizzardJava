@@ -1,4 +1,4 @@
-package 第一阶段.模块三JAVA核心类.常用的类和概述;
+package 常用的类和概述;
 
 public class StudentTest {
     public static void main(String[] args) {

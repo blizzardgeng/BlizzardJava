@@ -1,6 +1,6 @@
-package 第一阶段.模块二面向对象.特殊类.枚举.枚举其他参数方法;
+package 特殊类.枚举.枚举其他参数方法;
 
-import 第一阶段.模块二面向对象.多态和特殊类.枚举.DirectionEnum;
+import 多态和特殊类.枚举.DirectionEnum;
 
 /**
  * 描述

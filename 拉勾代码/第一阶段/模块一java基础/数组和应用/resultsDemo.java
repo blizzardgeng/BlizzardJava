@@ -1,4 +1,4 @@
-package 第一阶段.模块一java基础.数组和应用;
+package 数组和应用;
 
 import java.util.Scanner;
 

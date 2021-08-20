@@ -1,4 +1,4 @@
-package 第一阶段.模块三JAVA核心类.数学处理类.Math类;
+package 数学处理类.Math类;
 
 public class MathTest {
     public static void main(String[] args) {

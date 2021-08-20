@@ -1,4 +1,6 @@
-package 第一阶段.模块二面向对象.方法和封装.构造方法;
+package 方法和封装.构造方法;
+
+import 方法和封装.构造方法.Student;
 
 import java.util.Arrays;
 import java.util.Scanner;

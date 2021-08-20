@@ -1,4 +1,4 @@
-package 第一阶段.模块三JAVA核心类.Object类;
+package Object类;
 
 /**
  * equals默认比较方法，默认比较地址

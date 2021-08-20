@@ -1,4 +1,4 @@
-package 第一阶段.模块二面向对象.多态和特殊类.内部类;
+package 多态和特殊类.内部类;
 
 /**
  * @ClassName NormalOuterTest

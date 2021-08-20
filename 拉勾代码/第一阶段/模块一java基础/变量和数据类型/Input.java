@@ -1,3 +1,5 @@
+package 变量和数据类型;
+
 import java.util.Scanner;
 
 /**

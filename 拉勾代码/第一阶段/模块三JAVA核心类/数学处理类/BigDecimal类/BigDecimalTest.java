@@ -1,4 +1,4 @@
-package 第一阶段.模块三JAVA核心类.数学处理类.BigDecimal类;
+package 数学处理类.BigDecimal类;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

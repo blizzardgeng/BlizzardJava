@@ -1,4 +1,4 @@
-package 第一阶段.模块二面向对象.类和对象;
+package 类和对象;
 
 import java.util.Arrays;
 

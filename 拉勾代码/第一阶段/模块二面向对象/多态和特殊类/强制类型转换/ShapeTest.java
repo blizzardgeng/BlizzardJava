@@ -1,8 +1,8 @@
-package 第一阶段.模块二面向对象.多态和特殊类.强制类型转换;
+package 多态和特殊类.强制类型转换;
 
-import 第一阶段.模块二面向对象.多态和特殊类.强制类型转换.Circle;
-import 第一阶段.模块二面向对象.多态和特殊类.强制类型转换.Rect;
-import 第一阶段.模块二面向对象.多态和特殊类.强制类型转换.Shape;
+import 多态和特殊类.强制类型转换.Circle;
+import 多态和特殊类.强制类型转换.Rect;
+import 多态和特殊类.强制类型转换.Shape;
 
 /**
  * @author blizzard
