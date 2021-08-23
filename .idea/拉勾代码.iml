@@ -3,9 +3,9 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/拉勾代码/第一阶段/模块一java基础" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/拉勾代码/第一阶段/模块三JAVA核心类" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/拉勾代码/第一阶段/模块二面向对象" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/拉勾代码/第一阶段/01、模块一java基础" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/拉勾代码/第一阶段/02、模块二面向对象" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/拉勾代码/第一阶段/03、模块三JAVA核心类" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
