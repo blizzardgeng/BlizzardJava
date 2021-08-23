@@ -1,6 +1,6 @@
 package static关键字和继承.构造块和静态代码块;
 
-import 第一阶段.模块二面向对象.static关键字和继承.Animal;
+import static关键字和继承.Animal;
 
 /**
  * @author : Kevin Geng
