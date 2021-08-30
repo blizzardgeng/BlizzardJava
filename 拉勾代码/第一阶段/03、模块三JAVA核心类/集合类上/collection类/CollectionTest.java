@@ -1,12 +1,9 @@
-package 集合类.collection类;
+package 集合类上.collection类;
 
-
-import 多态和特殊类.内部类.StaticOuter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 
 public class CollectionTest {
     public static void main(String[] args) {

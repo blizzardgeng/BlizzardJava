@@ -1,10 +1,10 @@
-package 集合类.List集合;
+package 集合类上.collection类.List接口;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ListTest {
+public class ListArrayListTest {
     public static void main(String[] args) {
 
         List lt1 = new ArrayList();

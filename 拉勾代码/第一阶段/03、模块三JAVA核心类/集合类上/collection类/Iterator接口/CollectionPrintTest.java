@@ -1,6 +1,6 @@
-package 集合类.Iterator接口;
+package 集合类上.collection类.Iterator接口;
 
-import 集合类.collection类.Person;
+import 集合类上.collection类.Person;
 
 import java.util.ArrayList;
 import java.util.Collection;

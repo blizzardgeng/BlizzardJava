@@ -1,4 +1,4 @@
-package 集合类.collection类;
+package 集合类上.collection类;
 
 import java.util.Objects;
 
