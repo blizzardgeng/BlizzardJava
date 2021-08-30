@@ -1,6 +1,6 @@
 package String类的概述和使用.String类常用的成员方法.查找方法;
 
-import javafx.geometry.Pos;
+
 import org.w3c.dom.ls.LSOutput;
 
 public class StringFindTest {
