@@ -1,4 +1,4 @@
-package 集合类上.collection类.set接口;
+package 集合类上.collection类.set接口.TreeSet;
 
 public class Student implements Comparable<Student> {
     private String name;
