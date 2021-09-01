@@ -1,8 +1,8 @@
-package 集合类上.collection类;
+package 集合类上.collection接口;
 
 import java.util.Objects;
 
-public class Person {
+public class TestObject {
     private String name;
     private int age;
 
@@ -22,19 +22,17 @@ public class Person {
         this.age = age;
     }
 
-    public Person() {
+    public TestObject() {
     }
 
-    public Person(String name, int age) {
-
-        setName(name);
-        setAge(age);
-
+    public TestObject(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "TestObject{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
@@ -44,8 +42,8 @@ public class Person {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return age == person.age && Objects.equals(name, person.name);
+        TestObject that = (TestObject) o;
+        return age == that.age && Objects.equals(name, that.name);
     }
 
     @Override

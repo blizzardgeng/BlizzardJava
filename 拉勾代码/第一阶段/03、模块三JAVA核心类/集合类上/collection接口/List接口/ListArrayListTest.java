@@ -1,4 +1,4 @@
-package 集合类上.collection类.List接口;
+package 集合类上.collection接口.List接口;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

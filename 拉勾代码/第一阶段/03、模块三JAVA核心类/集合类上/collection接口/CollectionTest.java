@@ -1,4 +1,4 @@
-package 集合类上.collection类;
+package 集合类上.collection接口;
 
 
 import java.util.ArrayList;
