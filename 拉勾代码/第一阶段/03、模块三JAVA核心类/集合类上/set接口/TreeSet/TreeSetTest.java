@@ -1,4 +1,4 @@
-package 集合类上.collection接口.set接口.TreeSet;
+package 集合类上.set接口.TreeSet;
 
 import java.util.Set;
 import java.util.TreeSet;

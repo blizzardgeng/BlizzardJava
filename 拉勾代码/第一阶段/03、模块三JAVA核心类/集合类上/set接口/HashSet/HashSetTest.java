@@ -1,4 +1,4 @@
-package 集合类上.collection接口.set接口.HashSet;
+package 集合类上.set接口.HashSet;
 
 import java.util.HashSet;
 import java.util.Set;

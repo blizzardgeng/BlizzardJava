@@ -1,6 +1,5 @@
-package 集合类下.泛型机制.Collections类;
+package 集合类下.集合.Collections类;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class CollectionsTest {

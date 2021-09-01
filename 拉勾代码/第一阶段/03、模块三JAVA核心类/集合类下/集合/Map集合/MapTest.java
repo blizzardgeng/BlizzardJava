@@ -1,4 +1,4 @@
-package 集合类下.泛型机制.Map集合;
+package 集合类下.集合.Map集合;
 
 import java.util.Collection;
 import java.util.HashMap;

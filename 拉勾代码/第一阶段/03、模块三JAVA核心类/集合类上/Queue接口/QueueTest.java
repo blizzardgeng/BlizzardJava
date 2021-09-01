@@ -1,4 +1,4 @@
-package 集合类上.collection接口.Queue接口;
+package 集合类上.Queue接口;
 
 import java.util.Collection;
 import java.util.LinkedList;
