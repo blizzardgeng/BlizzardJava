@@ -1,10 +1,8 @@
-package 多线程.线程.线程同步机制.同步方法方式.异常处理方式二;
+package 多线程.线程.线程同步机制.同步方法方式.接口方式;
+
+public class AccountRunnableTest implements Runnable {
 
 
-
-public class AccountThreadTest extends Thread {
-
-    private Demo dm = new Demo();
 
     private int balance;  //描述银行账户余额
 
@@ -16,20 +14,20 @@ public class AccountThreadTest extends Thread {
         this.balance = balance;
     }
 
-    public AccountThreadTest() {
+    public AccountRunnableTest() {
     }
 
-    public AccountThreadTest(int balance) {
-        setBalance(balance);
+    public AccountRunnableTest(int balance) {
+       setBalance(balance);
     }
 
 
 
     @Override
-    public void run() {
-        synchronized (dm) {
+    public /*synchronized*/ void run() {
+            
+        synchronized (this) {
             System.out.println("线程启动，名称是"+Thread.currentThread().getName());
-//        synchronized (new Demo()) {
 //        1、模拟从后台查询余额的过程
             int temp = getBalance();
 
@@ -53,25 +51,24 @@ public class AccountThreadTest extends Thread {
     }
 
     public static void main(String[] args) {
-        AccountThreadTest att1 = new AccountThreadTest(1000);
-        att1.start();
-        AccountThreadTest att2 = new AccountThreadTest(1000);
-        att2.start();
+        AccountRunnableTest art = new AccountRunnableTest(1000);
 
+        Thread t1 = new Thread(art);
+        Thread t2 = new Thread(art);
+        t1.start();
+        t2.start();
+
+        System.out.println("主线程等待");
         try {
-            att1.join();
+            t1.join();
 
-            att2.join();
+            t2.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("最终账户余额是"+att2.getBalance());
 
-
+        System.out.println("最终余额是"+art.getBalance());
 
     }
 }
 
-class Demo{
-
-}

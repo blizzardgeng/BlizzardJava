@@ -1,4 +1,4 @@
-package 多线程.线程.线程同步机制.同步代码块方式.异常处理方式二;
+package 多线程.线程.线程同步机制.同步代码块方式.继承方式;
 
 
 
@@ -28,7 +28,7 @@ public class AccountThreadTest extends Thread {
     @Override
     public void run() {
         synchronized (dm) {
-//        synchronized (new Demo()) {
+//        synchronized (new Demo()) {       //锁不住，必须是同一个对象
 //        1、模拟从后台查询余额的过程
             int temp = getBalance();
 

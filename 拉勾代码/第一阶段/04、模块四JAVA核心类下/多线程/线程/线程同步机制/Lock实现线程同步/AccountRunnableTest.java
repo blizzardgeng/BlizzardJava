@@ -1,8 +1,10 @@
-package 多线程.线程.线程同步机制.同步方法方式.异常处理方式一;
+package 多线程.线程.线程同步机制.Lock实现线程同步;
+
+import java.util.concurrent.locks.ReentrantLock;
 
 public class AccountRunnableTest implements Runnable {
 
-
+    private ReentrantLock lock = new ReentrantLock();           //准备了一把锁
 
     private int balance;  //描述银行账户余额
 
@@ -25,8 +27,11 @@ public class AccountRunnableTest implements Runnable {
 
     @Override
     public /*synchronized*/ void run() {
-            
-        synchronized (this) {
+
+//        加锁
+        lock.lock();
+
+//        synchronized (this) {
             System.out.println("线程启动，名称是"+Thread.currentThread().getName());
 //        1、模拟从后台查询余额的过程
             int temp = getBalance();
@@ -47,7 +52,10 @@ public class AccountRunnableTest implements Runnable {
 
 //        3、模拟写入最新余额
             setBalance(temp);
-        }
+//        }
+//        解锁
+             lock.unlock();
+
     }
 
     public static void main(String[] args) {

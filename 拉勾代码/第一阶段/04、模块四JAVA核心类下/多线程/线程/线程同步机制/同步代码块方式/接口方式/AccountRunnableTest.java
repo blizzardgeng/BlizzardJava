@@ -1,4 +1,4 @@
-package 多线程.线程.线程同步机制.同步代码块方式.异常处理方式一;
+package 多线程.线程.线程同步机制.同步代码块方式.接口方式;
 
 public class AccountRunnableTest implements Runnable {
 
