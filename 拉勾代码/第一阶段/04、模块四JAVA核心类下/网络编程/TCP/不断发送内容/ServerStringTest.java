@@ -1,8 +1,9 @@
-package 网络编程.TCP.基础实现;
+package 网络编程.TCP.不断发送内容;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -11,6 +12,7 @@ public class ServerStringTest {
         ServerSocket ss = null;
         Socket s = null;
         BufferedReader br = null;
+        PrintStream ps = null;
         try {
 //        1、创建ServerSocket类型对象并提供端口号
             ss = new ServerSocket(8888);
@@ -22,13 +24,29 @@ public class ServerStringTest {
 //        3、使用输入输出刘进行通信
             //显示客户端发送过来的字符串内容接收
             br = new BufferedReader(new InputStreamReader(s.getInputStream()));
+            ps = new PrintStream(s.getOutputStream());
+            while (true) {
+                //如果客户端没有发送信息，则会一直阻塞
+                String s1 = br.readLine();
+                System.out.println("获取到的内容是" + s1);
+                if ("bay".equals(s1) || "再见".equals(s1)) {
+                    System.out.println("客户端下线");
+                    break;
 
-            //如果客户端没有发送信息，则会一直阻塞
-            String s1 = br.readLine();
-            System.out.println("获取到的内容是" + s1);
+                }
+                //实现客户端向服务器发送
+                ps.println("我收到信息啦");
+
+                ps.println("收到信息");
+
+            }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
+            if (null != ps) {
+                ps.close();
+            }
+
             if (null != br) {
                 try {
                     br.close();

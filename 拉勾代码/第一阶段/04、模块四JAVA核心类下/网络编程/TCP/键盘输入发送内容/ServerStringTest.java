@@ -1,8 +1,9 @@
-package 网络编程.TCP.基础实现;
+package 网络编程.TCP.键盘输入发送内容;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -11,6 +12,7 @@ public class ServerStringTest {
         ServerSocket ss = null;
         Socket s = null;
         BufferedReader br = null;
+        PrintStream ps = null;
         try {
 //        1、创建ServerSocket类型对象并提供端口号
             ss = new ServerSocket(8888);
@@ -26,9 +28,17 @@ public class ServerStringTest {
             //如果客户端没有发送信息，则会一直阻塞
             String s1 = br.readLine();
             System.out.println("获取到的内容是" + s1);
+            //实现客户端向服务器发送
+            ps = new PrintStream(s.getOutputStream());
+            ps.println("收到信息");
+            System.out.println("服务器回发信息成功");
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
+            if (null != ps) {
+                ps.close();
+            }
+
             if (null != br) {
                 try {
                     br.close();
