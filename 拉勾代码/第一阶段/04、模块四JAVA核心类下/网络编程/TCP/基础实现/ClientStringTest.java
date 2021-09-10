@@ -33,7 +33,6 @@ public class ClientStringTest {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
             }
 
         }
