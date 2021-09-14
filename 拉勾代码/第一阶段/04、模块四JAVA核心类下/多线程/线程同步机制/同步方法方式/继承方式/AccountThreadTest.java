@@ -43,7 +43,7 @@ public class AccountThreadTest extends Thread {
                 System.out.println("请取走钱");
             } else {
                 System.out.println("余额不足请核对余额");
-            }
+            }K
 
 //        3、模拟写入最新余额
             setBalance(temp);

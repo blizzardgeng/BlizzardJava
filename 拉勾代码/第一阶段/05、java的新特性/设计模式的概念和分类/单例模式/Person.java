@@ -14,13 +14,25 @@ public class Person {
 
     //3.是供么公有的get方法负贡将上还对貌这回出去，并使用public static关键字修饼
 
-    public static synchronized Person getObj() {
+    public static /*synchronized*/ Person getObj() {
+//        synchronized (Person.class) {
+//            if (null == s) {
+//                s = new Person();
+//            }
+//
+//            return s;
+//        }
         if (null == s) {
-            s = new Person();
+            synchronized (Person.class) {
+                if (null == s) {
+                    s = new Person();
+                }
+
+            }
+
         }
-
         return s;
-    }
 
+    }
 
 }
