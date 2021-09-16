@@ -1,10 +1,9 @@
-package 新特性.Stream类;
+package 新特性.Stream类.筛选和切片;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
-import java.util.stream.Stream;
 
 public class ListPersonTest {
     public static void main(String[] args) {
@@ -99,7 +98,9 @@ public class ListPersonTest {
 
         System.out.println("---------------------------------------------------------==");
 //        跳过2个元素在过去三个元素
-        list.stream().skip(2).limit(3).filter(person -> person.getAge() >= 18).forEach(person -> System.out.println(person));
+        list.stream().skip(2).limit(3).forEach(System.out::println);
+
+        System.out.println("---------------------------------------------------------==");
 
 
 

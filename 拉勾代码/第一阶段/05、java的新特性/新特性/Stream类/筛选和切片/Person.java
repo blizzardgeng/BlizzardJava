@@ -1,4 +1,4 @@
-package 新特性.Stream类;
+package 新特性.Stream类.筛选和切片;
 
 public class Person {
     private String name;
