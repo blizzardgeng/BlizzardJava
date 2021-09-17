@@ -1,6 +1,6 @@
-package 新特性.Stream类.排序;
+package 新特性.Stream类.终止操作;
 
-public class Person implements Comparable<Person>{
+public class Person {
     private String name;
     private int age;
 
@@ -40,13 +40,5 @@ public class Person implements Comparable<Person>{
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
-    }
-
-
-
-    @Override
-    public int compareTo(Person o) {
-//        return getName().compareTo(o.getName());
-        return getAge() -o.getAge();
     }
 }
